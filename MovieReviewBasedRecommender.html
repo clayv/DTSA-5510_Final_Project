@@ -16891,26 +16891,11 @@ Within 1 Star:		0.4347		2.3448
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Step-4:-Conclusions">Step 4: Conclusions<a class="anchor-link" href="#Step-4:-Conclusions">&#182;</a></h3><p>The use of user submitted reviews to predict similarities, in this case for movies, is to the best of my knowledge not been done before. Recommender systems based on attributes, such as genre, and movie plots (see <a href="https://www.kaggle.com/code/basu369victor/recommender-system-using-un-supervised-learning/data">Recommender System using Un-supervised Learning</a> have previously been explored, but not user generated reviews.</p>
 <p>The results of doing predictions from user reviews does show promise though, with an accuracy and RMSE of 0.7565 and 1.2548 repsectively on the balanced dataset and 0.9256 and 0.6429 respectively on the original (skewed) dataset for movies. However, much more time would be needed to experiment for further improvements. This could be time well spent though as the use of user reviews could have broader applications for recommender systems in general, such as for restaurants.</p>
+<p>But the most interesting part of this project for me was rethinking how to measure the the results of a recommender system. Typically measurements such as precise accuracy, precision, and recall are used. But in a recommender system, a "precise" measurement is not needed as much as one that is "close" (e.g. within 1 star). The additional insight was that it is not necessary to measure a recommender system on the things it would not recommend, which lead to chosen model being measured only on those movies ranked 4 or higher.</p>
 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div>
 </body>
 
